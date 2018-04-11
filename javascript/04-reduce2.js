@@ -1,7 +1,7 @@
 var items = [{ name: 'Xbox', price: 299 }, { name: 'PS4', price: 499 }, { name: 'iPhone', price: 999 }]
 
 var expensiveItems = items.filter(item => {
-	return item.price > 300
+	return item.price > 200
 })
 
 var modifiedItems = expensiveItems.map(function (item) {
@@ -20,6 +20,11 @@ modifiedItems.forEach(function (item) {
 	itemLi.appendChild(liText)
 	itemsUl.appendChild(itemLi)
 })
+
+// var myAvgReducer = function (total, item) {
+// 	return total + item.price
+// }, 0)
+
 
 var totalPrice = items.reduce(function (total, item) {
 	return total + item.price

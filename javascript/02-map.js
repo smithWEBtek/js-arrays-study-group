@@ -5,14 +5,14 @@ var itemsUl = document.getElementById('items')
 
 
 var modifiedItems = items.map(function (item) {
-	return { name: item.name, price: `$$$$$${item.price}` }
+	return { name: item.name, price: `$brad elment car bird ${item.price}` }
 })
 
-console.log('[items]', items)
-console.log('[modifiedItems]', modifiedItems)
+// console.log('[items]', items)
+// console.log('[modifiedItems]', modifiedItems)
 
-// console.log('[itemsUl]', itemsUl);
-// console.log('[itemsDiv]', itemsDiv);
+console.log('[itemsUl]', itemsUl);
+console.log('[itemsDiv]', itemsDiv);
 
 modifiedItems.forEach(function (item) {
 	const itemLi = document.createElement('li')

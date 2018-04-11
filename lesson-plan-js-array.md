@@ -65,7 +65,7 @@ modifiedItems.forEach(function(item) {
   * You need to iterate over an array
 
 ### Ask if there are any questions regarding forEach
-
+### The forEach() method executes a provided function once for each array element.
 - - - -
 
 ## map

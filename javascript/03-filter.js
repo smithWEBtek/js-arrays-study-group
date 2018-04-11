@@ -9,12 +9,12 @@ var expensiveItems = items.filter(item => {
 })
 
 var modifiedItems = expensiveItems.map(function (item) {
-	return { name: item.name, price: `$${item.price}` }
+	return { name: item.name, price: `$betty${item.price}` }
 })
 
-console.log(items)
-console.log(expensiveItems)
-console.log(modifiedItems)
+console.log('items original', items)
+console.log('expensive!', expensiveItems)
+console.log('modifiedItems', modifiedItems)
 
 var itemsUl = document.getElementById('items')
 

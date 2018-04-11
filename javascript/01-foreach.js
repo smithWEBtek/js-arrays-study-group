@@ -26,15 +26,21 @@ items.forEach(function (item) {
 
 
 
-var animalsDiv = document.getElementById('animals')
-var animalsUl = document.getElementById('animals')
-var modifiedAnimals = animals.map(function (animal) {
-	return { name: animal.name, species: `${animal.species}` }
-})
 
-animals.forEach(function (animal) {
-	const animalLi = document.createElement('li')
-	const liText = document.createTextNode(`${animal.name}: ${animal.species}`)
-	animalLi.appendChild(liText)
-	animalsUl.appendChild(animalLi)
-})
+
+
+
+
+
+// var animalsDiv = document.getElementById('animals')
+// var animalsUl = document.getElementById('animals')
+// var modifiedAnimals = animals.map(function (animal) {
+// 	return { name: animal.name, species: `${animal.species}` }
+// })
+
+// animals.forEach(function (animal) {
+// 	const animalLi = document.createElement('li')
+// 	const liText = document.createTextNode(`${animal.name}: ${animal.species}`)
+// 	animalLi.appendChild(liText)
+// 	animalsUl.appendChild(animalLi)
+// })
