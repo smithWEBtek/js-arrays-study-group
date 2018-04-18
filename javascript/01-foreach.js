@@ -2,16 +2,24 @@
 var items = [
 	{ name: 'Xbox', price: 299 },
 	{ name: 'PS4', price: 499 },
-	{ name: 'iPhone', price: 999 }
+	{ name: 'iPhone', price: 999 },
+	{ name: 'Headset', price: 124 }
 ];
+
+// const groceries = [
+// 	{ name: 'Bread', price: 1.99 },
+// 	{ name: 'Eggs', price: 2.99 },
+// 	{ name: 'Milk', price: 2.49 },
+// 	{ name: 'Batteries', price: 9.99 }
+// ];
 
 var itemsDiv = document.getElementById('items')
 var itemsUl = document.getElementById('items')
 
-
-console.log('[Brads items]', items)
-console.log('[itemsUl]', itemsUl);
-console.log('[itemsDiv]', itemsDiv);
+// console.log('[my items]', items)
+// console.log('[my products]', products)
+// console.log('[itemsUl]', itemsUl);
+// console.log('[itemsDiv]', itemsDiv);
 
 items.forEach(function (item) {
 	const itemLi = document.createElement('li')
@@ -19,6 +27,15 @@ items.forEach(function (item) {
 	itemLi.appendChild(liText)
 	itemsUl.appendChild(itemLi)
 })
+
+
+
+const myProducts = () => {
+	products.forEach((product, index) => {
+		console.log(product.price)
+	})
+}
+
 
 
 

@@ -1,18 +1,33 @@
 
-var items = [{ name: 'Xbox', price: 299 }, { name: 'PS4', price: 499 }, { name: 'iPhone', price: 999 }];
+var items = [
+	{ name: 'Xbox', price: 299 },
+	{ name: 'PS4', price: 499 },
+	{ name: 'iPhone', price: 999 },
+	{ name: 'Headset', price: 124 }
+];
+
+const groceries = [
+	{ name: 'Bread', price: 1.99 },
+	{ name: 'Eggs', price: 2.99 },
+	{ name: 'Milk', price: 2.49 },
+	{ name: 'Batteries', price: 9.99 }
+];
+
+
+
 var itemsDiv = document.getElementById('items')
 var itemsUl = document.getElementById('items')
 
 
 var modifiedItems = items.map(function (item) {
-	return { name: item.name, price: `$brad elment car bird ${item.price}` }
+	return { name: item.name, price: `$${item.price}` }
 })
 
 // console.log('[items]', items)
 // console.log('[modifiedItems]', modifiedItems)
 
-console.log('[itemsUl]', itemsUl);
-console.log('[itemsDiv]', itemsDiv);
+// console.log('[itemsUl]', itemsUl);
+// console.log('[itemsDiv]', itemsDiv);
 
 modifiedItems.forEach(function (item) {
 	const itemLi = document.createElement('li')

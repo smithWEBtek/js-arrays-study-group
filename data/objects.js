@@ -79,10 +79,10 @@ const foods = {
 }
 
 const products = [
-	{ name: 'Head & Shoulders Shampoo', price: 4.99 },
-	{ name: 'Twinkies', price: 7.99 },
+	{ name: 'Bread', price: 2.99 },
+	{ name: 'Twinkies', price: 3.99 },
 	{ name: 'Oreos', price: 6.49 },
-	{ name: 'Jasmine-scented bath pearls', price: 13.99 }
+	{ name: 'Juice', price: 1.99 }
 ];
 
 const animals = [
